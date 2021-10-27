@@ -1,4 +1,5 @@
 const ccxt = require('ccxt');
+const express = require('express')
 
 var kraken = new ccxt.kraken({id: "kraken"});
 var coinbase  = new ccxt.coinbase({id: "coinbase" });
@@ -14,11 +15,6 @@ const markets = ["BTC/USD", "ETH/USD"];
     console.log("Loading exchanges' markets")
     await loadExchangeMarkets()
     console.log("Loaded exchanges' markets\n")
-
-    
-
-
-
 })()
 
 
