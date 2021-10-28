@@ -6,15 +6,7 @@ var coinbase  = new ccxt.coinbase({id: "coinbase" });
 var exchanges = [kraken, coinbase];
 
 const markets = ["BTC/USD", "ETH/USD"];
-
-
-
-
-
-
-
-
-//ccxt setup
+//ccxt setup function
 (async function() {
     console.log("Loading exchanges' markets")
     await loadExchangeMarkets()
@@ -41,4 +33,14 @@ function terminateProgram(){
     console.log("\n\nProgram terminated\n\n")
     process.exit()
 }
+
+const app = express();
+const port = 3000;
+
+app.use("/",express.static('../client'))
+
+app.listen(port, () => {
+    console.log(`listening at http://localhost:${port}`)
+})
+
 
