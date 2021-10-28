@@ -10,7 +10,11 @@ const markets = ["BTC/USD", "ETH/USD"];
 
 
 
-//main
+
+
+
+
+//ccxt setup
 (async function() {
     console.log("Loading exchanges' markets")
     await loadExchangeMarkets()
