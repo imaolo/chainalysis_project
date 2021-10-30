@@ -2,7 +2,7 @@
 
 
 ## Build Instructions
-- dependencies: npm, node, npx, yarn
+- dependencies: npm, node, npx
 - steps:
 1. git clone https://github.com/mad360/chainalysis_project.git
 2. cd chainalysis_project
