@@ -1,4 +1,6 @@
 import "./Header.css";
 function Header(){
-  return <h1 className="header">Chainalysis Interview Project</h1>
+  return <h1>Chainalysis Interview Project</h1>
 }
+
+export default Header

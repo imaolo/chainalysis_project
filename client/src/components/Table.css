@@ -1,0 +1,24 @@
+
+tr {
+  border: 1px solid black;
+}
+
+.outer-table {
+  width: 98%;
+  height: 70%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.outer-table-titles-row {
+  height: 40px;
+  border: 1px solid black;
+}
+
+#empty{
+  width: 20%;
+}
+
+.col-title{
+  width: 40%;
+}

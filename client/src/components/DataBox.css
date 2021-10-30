@@ -1,0 +1,29 @@
+.data-box{
+  width: 100%;
+  height: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.inner-table-row{
+  height: 50%;
+
+}
+
+.bid-ask{
+  height: 18px;
+}
+
+
+
+#color{
+  background-color: "green";
+}
+
+#red{
+  background-color: "red";
+}
+.buysell{
+  width:100%;
+  height:100%;
+}
