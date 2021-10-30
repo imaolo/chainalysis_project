@@ -7,7 +7,7 @@
 1. git clone https://github.com/mad360/chainalysis_project.git
 2. cd chainalysis_project
 3. cd server
-4. yarn install
+4. npm install
 5. npm run start
 6. open new ternminal and navigate to the chainalysis_project folder
 7. cd client
