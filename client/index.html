@@ -1,81 +1,79 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="utf-8">
     <title>arbitrage</title>
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="client.js"></script>
 </head>
 <body>
-
-<h1 style="color: #5e9ca0;"><span style="color: #ff6600;">Chainalysis Interview Project</span></h1>
-
-<table style="border-collapse: collapse; width: 98%; height: 70%;" border="1">
-    <tbody>
-        <tr style="height: 40px;">
-            <td style="width: 20%;">&nbsp;</td>
-            <td style="width: 40%;">coinbase</td>
-            <td style="width: 40%;">kraken</td>
-        </tr>
-        <tr style="height: 40%;">
-            <td style="width: 20%;">BTC/USD</td>
-            <td style="width: 40%;">
-                <table style="border-collapse: collapse; width: 100%; height: 100%;" border="1">
-                    <tbody>
-                        <tr style = "height: 50%;">
-                            <td style="height: 18px;">Bid: </td>
-                            <td style="height: 18px;">Ask: </td>
-                        </tr>
-                        <tr>
-                            <td colspan = "2">BUY/SELL</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-            <td style="width: 46.1831%; height: 101px;">
-                <table style="border-collapse: collapse; width: 100%; height: 100%;" border="1">
-                    <tbody>
-                        <tr style = "height: 50%;">
-                            <td style="height: 18px;">Bid: </td>
-                            <td style="height: 18px;">Ask: </td>
-                        </tr>
-                        <tr>
-                            <td colspan = "2">BUY/SELL</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-        <tr style="height: 40%;">
-            <td style="width: 20%;">ETH/USD</td>
-            <td style="width: 40%;">
-                <table style="border-collapse: collapse; width: 100%; height: 100%;" border="1">
-                    <tbody>
-                        <tr style = "height: 50%;">
-                            <td style="height: 18px;">Bid: </td>
-                            <td style="height: 18px;">Ask: </td>
-                        </tr>
-                        <tr>
-                            <td colspan = "2">BUY/SELL</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-            <td style="width: 46.1831%; height: 101px;">
-                <table style="border-collapse: collapse; width: 100%; height: 100%;" border="1">
-                    <tbody>
-                        <tr style = "height: 50%;">
-                            <td style="height: 18px;">Bid: </td>
-                            <td style="height: 18px;">Ask: </td>
-                        </tr>
-                        <tr>
-                            <td colspan = "2">BUY/SELL</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </td>
-        </tr>
-    </tbody>
-</table>
-
+    <h1 style="color: #5e9ca0;"><span style="color: #ff6600;">Chainalysis Interview Project</span></h1>
+    <table style="table-layout:fixed; border-collapse: collapse; width: 98%; height: 70%;" border="1">
+        <tbody>
+            <tr style="height: 40px;">
+                <td style="width: 20%;">&nbsp;</td>
+                <td style="width: 40%;">bybit</td>
+                <td style="width: 40%;">kraken</td>
+            </tr>
+            <tr style="height: 40%;">
+                <td style="width: 20%;">BTC/USD</td>
+                <td style="width: 40%;">
+                    <table style="table-layout:fixed; border-collapse: collapse; width: 100%; height: 100%;" border="1">
+                        <tbody>
+                            <tr style = "height: 50%;">
+                                <td id="BTC:CB:bid" style="height: 18px;">BTC:CB:Bid: </td>
+                                <td id="BTC:CB:ask" style="height: 18px;">BTC:CB:Ask: </td>
+                            </tr>
+                            <tr>
+                                <td id="BTC:CB:bs" colspan = "2">BTC:CB:BUY/SELL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td style="width: 46.1831%; height: 101px;">
+                    <table style="table-layout:fixed;border-collapse: collapse; width: 100%; height: 100%;" border="1">
+                        <tbody>
+                            <tr style = "height: 50%;">
+                                <td id="BTC:K:bid" style="height: 18px;">BTC:K:Bid: </td>
+                                <td id="BTC:K:ask" style="height: 18px;">BTC:K:Ask: </td>
+                            </tr>
+                            <tr>
+                                <td id="BTC:K:bs" colspan = "2">BTC:K:BUY/SELL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr style="height: 40%;">
+                <td class="ETCrow" style="width: 20%;">ETH/USD</td>
+                <td style="width: 40%;">
+                    <table style="table-layout:fixed;border-collapse: collapse; width: 100%; height: 100%;" border="1">
+                        <tbody>
+                            <tr style = "height: 50%;">
+                                <td id="ETH:CB:bid" style="height: 18px;">ETH:CB:Bid: </td>
+                                <td id="ETH:CB:ask" style="height: 18px;">ETH:CB:Ask: </td>
+                            </tr>
+                            <tr>
+                                <td id="ETH:CB:bs" colspan = "2">ETH:CB:BUY/SELL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td style="table-layout:fixed;width: 46.1831%; height: 101px;">
+                    <table style="border-collapse: collapse; width: 100%; height: 100%;" border="1">
+                        <tbody>
+                            <tr style = "height: 50%;">
+                                <td id="ETH:K:bid" style="height: 18px;">ETH:K:Bid: </td>
+                                <td id="ETH:K:ask" style="height: 18px;">ETH:K:Ask: </td>
+                            </tr>
+                            <tr>
+                                <td id="ETH:K:bs" colspan = "2">ETH:K:BUY/SELL</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
