@@ -1,8 +1,8 @@
 {
-  "name": "chainalysis_project",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"
@@ -10,7 +10,7 @@
   "author": "Matt",
   "license": "ISC",
   "dependencies": {
-    "ccxt": "^1.59.22",
+    "ccxt": "^1.59.61",
     "express": "^4.17.1"
   }
 }
