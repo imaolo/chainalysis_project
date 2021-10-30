@@ -1,70 +1,22 @@
-# Getting Started with Create React App
+# Matt DiPaolo - Chainalysis Interview Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Build Instructions
+- dependencies: npm, node, npx
+- can visit url or follow these steps:
+1. git clone https://github.com/mad360/chainalysis_project.git
+2. cd chainalysis_project
+3. cd server
+4. npm install
+5. npm run start
+6. open new ternminal and navigate to the chainalysis_project folder
+7. cd client
+8. npm install
+9. npm run build
+10. visit http://localhost:3001/ in your favorite browser
 
-In the project directory, you can run:
-
-### `yarn start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Questionnaire
+1. Yes, there a few changes I would have liked to make. First, the user interface could most definitely be improved. As prices are updated, it would helpful for them to be highlighted so that you can see what and when data is retreived. The data is updated regardless, but in its current form it is hard to track when prices change. Also, I would have liked to highlight the buy box green and the sell box red. This is solely for ease of view. All things considered, my front end is hihgly dynamic to the data it receives from the backend. It will automatically adjust its table and rows dimensions to fit the structure of the json object. However, it is built only to compare two exchanges for buy and sell oppurtunities. It will still display all the prices, but will not be able to make recomenddations on more than two exchanges. This functionality would be out of scope for this project. Nonetheless, I like to write my applications as flexible as possible.
+2. Yes, there are plenty of parts of this application that are over-designed. It starts in my server.js file where I define an exchanges array and a markets array. From there, the application is able to conform to the format of these arrays. For example, if we added another currency to the markets array, the back-end program would retrieve this data, send it to the front-end, and the front-end would be able to modify its table row and column dimensions to reflect this change. The same is true for the exchanges array. However, as I previously mentioned, the front-end would only make recomendations on two exchange while still displaying all of them. Finally, I included more React funcional components than were necessary to my modular design skills
+3. On the front-end, I would need to do further research on React rendering so that I could determine whether my code and build files are a efficient as possible. Doing this would alleviate some web server stress. Though, the main change that would be required is to delegate between web and application servers. In other words, I would implement a load balancing system. 
+4. The front-end definitely needs work. It does the job and meets requirements but it is not very visually appealing. I would also refactor my code for readability, analyzability, changeability, and flexibility, especially my front end code.
