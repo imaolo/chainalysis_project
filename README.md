@@ -11,7 +11,7 @@
 5. npm run start
 6. open new ternminal and navigate to the chainalysis_project folder
 7. cd client
-8. npm install
+8. yarn install
 9. npm run build
 10. visit http://localhost:3001/ in your favorite browser
 
