@@ -12,8 +12,9 @@
 6. open new ternminal and navigate to the chainalysis_project folder
 7. cd client
 8. yarn install
-9. npm run build
-10. visit http://localhost:3001/ in your favorite browser
+9. npm install
+10. npm run build
+11. visit http://localhost:3001/ in your favorite browser
 
 ## Questionnaire
 1. Yes, there a few changes I would have liked to make. First, the user interface could most definitely be improved. As prices are updated, it would helpful for them to be highlighted so that you can see what and when data is retreived. The data is updated regardless, but in its current form it is hard to track when prices change. Also, I would have liked to highlight the buy box green and the sell box red. This is solely for ease of view. All things considered, my front end is hihgly dynamic to the data it receives from the backend. It will automatically adjust its table and rows dimensions to fit the structure of the json object. However, it is built only to compare two exchanges for buy and sell oppurtunities. It will still display all the prices, but will not be able to make recomenddations on more than two exchanges. This functionality would be out of scope for this project. Nonetheless, I like to write my applications as flexible as possible.
